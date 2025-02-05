@@ -20,7 +20,7 @@ Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for e
 - Dikte opp og illustrere datamodell ved hjelp av DrawSQL.
 - Dikte opp og illustrere app(s) ved hjelp av Figma.
 - Dikte opp og notere ned views og prosedyrer som er nødvendige/fornuftig.
-- Planlegge utviklingen og 
+- Planlegge utviklingen.
 - Lever inn planlegging.
 ### 06.02.25 - Torsdag (7.5t):
 - Definere tabeller som finnes i datamodellen.
@@ -40,9 +40,11 @@ Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for e
 ### 12.02.25 - Onsdag:
 - Presentasjon
 ### Kostnad:
-- Timer: 37.5
-- Timekostnad: 155,-
-- Totalkostnad: 5812.50,-
+- Total timekostnad: 5812.50,-
+  - Antall timer: 37.5
+  - Timekostnad: 155,-
+- Omega365 lisens: ?,-
+- Total kostnad: ?,-
 
 # Teknologi
 ## Omega365:
@@ -52,12 +54,12 @@ Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for e
 - Snippets - litt lik code search, men mer oversiktlig og klar. Snippets lar deg lese dokumentasjon om spesifikke komponenter, f.eks hvilken propper de har og hva de gjør.
 - Data API - tillater deg å kommunisere fra frontend til backend. Ved hjelp av dataobjekter kan du koble til views. (Ikke tabeller. Det beste du kan koble til er tabell view, et view som er designet for å vise tabellen med sikkerhet integrert.) Den kan også kjøre prosedyrer.
 ## Annet:
-- Jeg kommer til å bruke internettet for å finne ut av syntaks i kode og debugging og litt andre greier som kan være greit.
-- Det kan hende jeg bruker Tor eller kolleger.
-- Det er mulig at jeg bruker ChatGPT i tilfelle jeg har et veldig spesifikt problem som ikke er lett å søke etter på nett.
+- Github - for dokumentasjon. Er veldig simpelt og greit.
+- DrawSQL - for å lage datamodell.
+- Figma - for å tegne hvordan app skal omtrent se ut.
 
 # Skisser
-## Databasemodell (DrawSQL)
+## Datamodell (DrawSQL)
 INSERT IMAGE HERE
 - Tabell 1: Beskrivelse.
 ## App (Figma)
@@ -65,13 +67,13 @@ INSERT IMAGE HERE
 
 # Kilder
 ## Informasjonskilder:
-- [ChatGPT.](https://chatgpt.com/)
-- [StackOverflow.](https://stackoverflow.com/)
-- [Vue.js.](https://vuejs.org/)
-- [W3Schools.](https://www.w3schools.com/)
+- [ChatGPT](https://chatgpt.com/)
+- [StackOverflow](https://stackoverflow.com/)
+- [Vue.js](https://vuejs.org/)
+- [W3Schools](https://www.w3schools.com/)
 - [Bootstrap Docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-- [Figma.](https://www.figma.com/)
-- [DrawSQL.](https://drawsql.app/)
+- [Figma](https://www.figma.com/)
+- [DrawSQL](https://drawsql.app/)
 ## Samarbeidspartnere:
 - Det kan hende jeg bruker Tor, mest sannsynlig relatert til sikkerhet eller noe backend greier.
 - Kolleger, sikkert for frontend greier.
