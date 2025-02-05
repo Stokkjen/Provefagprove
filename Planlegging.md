@@ -41,3 +41,9 @@ Målet med oppgaven er å lage en app for å ha kontroll på reservesjoner for e
 - Presentasjon
 
 # Teknologi
+ - Appframe: Omega365 sitt rammeverk. Dette er det jeg valgte, siden jeg kjenner meg godt igjen der. Det finnes mange verktøy innebygd.
+ - CTP: ellers kjent som "Core Technology Platform" er passende, siden den holder seg godt oppdatert, og bruker Vue.js, som er et rammeverk som støtter gjenbrukbare komponenter, og har mange innebygde komponenter allerede.
+ - Appdesigner: lar deg lage appene. Her får du mange kjekke verktøy som du kan bruke for vise frem data, og å gjøre endringer.
+ - Code Search: lar deg se på koden i andre apper. Dette er et meget kjekt verktøy å bruke når en ikke husker eller ikke vet hvordan en bruker spesifikke komponenter eller hvis du vil vite hvordan en gjør ting i javascript.
+ - Snippets: litt lik code search, men mer oversiktlig og klar. Snippets lar deg lese dokumentasjon om spesifikke komponenter, f.eks hvilken propper de har og hva de gjør.
+ - Data API: tillater deg å kommunisere fra frontend til backend. Ved hjelp av dataobjekter kan du koble til views. (Ikke tabeller. Det beste du kan koble til er tabell view, et view som er designet for å vise tabellen med sikkerhet integrert.) Den kan også kjøre prosedyrer.
