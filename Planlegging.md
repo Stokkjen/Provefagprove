@@ -60,9 +60,14 @@ Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for e
 
 # Skisser
 ## Datamodell (DrawSQL)
-INSERT IMAGE HERE
-- Tabell 1: Beskrivelse.
+![image](https://github.com/user-attachments/assets/8970da68-f75f-411c-b797-1d36e13bcb3f)
+- Reservations: Holder informasjon om alle reservasjoner. Dette er godt nok for nå, siden den har all informasjonen som kreves.
 ## Apps (Figma)
+### Se dine reservasjoner
+![image](https://github.com/user-attachments/assets/0bf13c24-796b-4bed-a274-939232ac48f2)
+### Lag reservasjon for deg selv
+![image](https://github.com/user-attachments/assets/ae0748a4-b15c-47d0-9e01-3122837f53eb)
+### Admin
 INSERT IMAGE HERE
 
 # Kilder
