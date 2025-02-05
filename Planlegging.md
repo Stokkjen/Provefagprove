@@ -1,6 +1,6 @@
 # Oppgave
 ## Mål
-Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for en restaurant, og for gjestene å legge til eller modifisere reservasjoner. Denne restauranten kan kun ha 12 gjester til gangen, men det ble ikke spesifisert noe med hvordan bordene virker. Da tar jeg og antar at de setter i sammen bord som har plass til 2 stykk sammen, slik at hvis det er 4 blir det 2 bord, hvis det er 5 blir det 3 bord. De har 6 bord, som gjør slik at 12 gjester holder maksimum. Men, det kan hende at alle bordene blir brukt og det ikke er hele 12 gjester.
+Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for en restaurant, og for gjestene å legge til eller kansellere reservasjoner. Denne restauranten kan kun ha 12 gjester til gangen, men det ble ikke spesifisert noe med hvordan bordene virker. Da tar jeg og antar at de setter i sammen bord som har plass til 2 stykk sammen, slik at hvis det er 4 blir det 2 bord, hvis det er 5 blir det 3 bord. De har 6 bord, som gjør slik at 12 gjester holder maksimum. Men, det kan hende at alle bordene blir brukt og det ikke er hele 12 gjester.
 
 # Arbeid
 ## Fremgangsmåte:
@@ -43,8 +43,11 @@ Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for e
 - Total timekostnad: 5812.50,-
   - Antall timer: 37.5
   - Timekostnad: 155,-
-- Omega365 lisens: ?,-
-- Total kostnad: ?,-
+- Omega365 lisens (Per måned):
+  - Hosting: 8000,-
+  - Produkt: 25000,-
+  - Bruker: 380,-
+- Total kostnad: 38812.50,- (pluss 380,- per bruker)
 
 # Teknologi
 ## Omega365:
@@ -60,15 +63,22 @@ Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for e
 
 # Skisser
 ## Datamodell (DrawSQL)
-![image](https://github.com/user-attachments/assets/8970da68-f75f-411c-b797-1d36e13bcb3f)
-- Reservations: Holder informasjon om alle reservasjoner. Dette er godt nok for nå, siden den har all informasjonen som kreves.
+Fikk dessverre ikke tid til å legge inn skikkelig sikkerhet, men det kommer.
+![image](https://github.com/user-attachments/assets/acb22cf1-3e13-4d70-b4f6-7c4bd53ea59d)
+- Reservations: Holder informasjon om alle reservasjoner.
+- ReservationHolder: Informasjon om forskjellige folk som har booket reservasjon. De kan enten være allerede i systemet, eller så kan det være at de ble lagt til av admin.
 ## Apps (Figma)
-### Se dine reservasjoner
-![image](https://github.com/user-attachments/assets/0bf13c24-796b-4bed-a274-939232ac48f2)
-### Lag reservasjon for deg selv
-![image](https://github.com/user-attachments/assets/ae0748a4-b15c-47d0-9e01-3122837f53eb)
-### Admin
-INSERT IMAGE HERE
+![image](https://github.com/user-attachments/assets/d715d876-e5d4-4c97-8b1a-081f92dc46a7)
+
+# Views, Procedures og Triggers
+## Views
+- AllReservations: Viser alle reservasjoner for admin.
+- ReservationsToday: Viser alle reservasjoner som er i dag. Disse skal være hovedfokuset for admin.
+## Procedures
+- BookReservation: Booker reservasjon. Denne tar inn reservasjoner fra både admin og kunde.
+  - Kansellering kunne hatt en prosedyre, men det kan en gjøre i gridden. Dette er da en mulig utvidelse om jeg får tid.
+## Triggers
+- Reservations Insert: Hvis inserten ender opp med mer enn 6 bord opptatt, stopper triggeren deg.
 
 # Kilder
 ## Informasjonskilder:
