@@ -1,13 +1,13 @@
 # Oppgave
 ## Mål
-Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for en restaurant. Denne restauranten kan kun ha 12 gjester til gangen, men det ble ikke spesifisert noe med hvordan bordene virker. Da tar jeg og antar at de setter i sammen bord som har plass til 2 stykk sammen, slik at hvis det er 4 blir det 2 bord, hvis det er 5 blir det 3 bord. De har 6 bord, som gjør slik at 12 gjester holder maksimum. Men, det kan hende at alle bordene blir brukt og det ikke er hele 12 gjester.
+Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for en restaurant, og for gjestene å legge til eller modifisere reservasjoner. Denne restauranten kan kun ha 12 gjester til gangen, men det ble ikke spesifisert noe med hvordan bordene virker. Da tar jeg og antar at de setter i sammen bord som har plass til 2 stykk sammen, slik at hvis det er 4 blir det 2 bord, hvis det er 5 blir det 3 bord. De har 6 bord, som gjør slik at 12 gjester holder maksimum. Men, det kan hende at alle bordene blir brukt og det ikke er hele 12 gjester.
 
 # Arbeid
 ## Fremgangsmåte:
 - Først vil jeg bruke DrawSQL for å tenke opp og illustrere en datamodell (hovedsaklig tabeller) som tilpasser selve oppgaven.
 - Jeg kommer også til å tenke ut eventuelle views for å få samlet data på en sikker og fornuftig måte.
 - Det samme gjelder for prosedyrer, for å få funksjonaliteten som er nødvendig.
-- Så kommer jeg til å lage illustrasjoner av appen ved hjelpen av Figma.
+- Så kommer jeg til å lage illustrasjoner av appene ved hjelpen av Figma.
 - Når jeg har en klar idé over hvordan ting skal fungere og se ut, begynner jeg med å definere alle objektene i SQL. Dette inkluderer da tabeller, views og procedures.
 - Da skal backend delen være på plass, men hvis nødvendig, gjør jeg modifikasjoner til triggerene for å få på plass spesifikke tilganger eller funksjonalitet rundt modifisering av data i tabeller.
 - Da begynner jeg å jobbe på frontend delen. Da følger jeg bare Figma skissen, og tar i bruk views og prosedyrer som jeg har laget.
@@ -18,7 +18,7 @@ Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for e
 ### 05.02.25 - Onsdag (7.5t):
 - Gjennomgang av prøvefagprøve.
 - Dikte opp og illustrere datamodell ved hjelp av DrawSQL.
-- Dikte opp og illustrere app(s) ved hjelp av Figma.
+- Dikte opp og illustrere apps ved hjelp av Figma.
 - Dikte opp og notere ned views og prosedyrer som er nødvendige/fornuftig.
 - Planlegge utviklingen.
 - Lever inn planlegging.
@@ -27,15 +27,15 @@ Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for e
 - Begynne på å definere views og prosedyrer og evt. jobbe med triggere, men basert på hvor mye det blir, kan dette nok drøye seg ut til neste dag.
 ### 07.02.25 - Fredag (7.5t):
 - Fullføre backenden.
-- Begynne på appen ved å følge skissen laget i Figma.
+- Begynne på appene ved å følge skissen laget i Figma.
 ### (08-09).02.25 - Helg:
-- Fortsette på appen.
+- Fortsette på appene.
 ### 10.02.25 - Mandag (7.5t):
-- Fortsette på appen.
+- Fortsette på appene.
 - Evt. modifiser på backenden hvis ting har dukket opp.
 ### 11.02.25 - Tirsdag (7.5t):
 - Test test test, fiks fiks fiks.
-- Fullfør appen.
+- Fullfør appene.
 - Forberede seg til presentasjon.
 ### 12.02.25 - Onsdag:
 - Presentasjon
@@ -56,13 +56,13 @@ Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for e
 ## Annet:
 - Github - for dokumentasjon. Er veldig simpelt og greit.
 - DrawSQL - for å lage datamodell.
-- Figma - for å tegne hvordan app skal omtrent se ut.
+- Figma - for å tegne hvordan appene skal omtrent se ut.
 
 # Skisser
 ## Datamodell (DrawSQL)
 INSERT IMAGE HERE
 - Tabell 1: Beskrivelse.
-## App (Figma)
+## Apps (Figma)
 INSERT IMAGE HERE
 
 # Kilder
