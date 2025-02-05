@@ -62,12 +62,12 @@ Målet med oppgaven er å lage en app for å ha kontroll på reservasjoner for e
 - Figma - for å tegne hvordan appene skal omtrent se ut.
 
 # Skisser
-## Datamodell (DrawSQL)
+## Datamodell ([DrawSQL](https://drawsql.app/teams/omega365-1/diagrams/datamodell-for-restaurant-reservasjoner))
 Fikk dessverre ikke tid til å legge inn skikkelig sikkerhet, men det kommer.
 ![image](https://github.com/user-attachments/assets/acb22cf1-3e13-4d70-b4f6-7c4bd53ea59d)
 - Reservations: Holder informasjon om alle reservasjoner.
 - ReservationHolder: Informasjon om forskjellige folk som har booket reservasjon. De kan enten være allerede i systemet, eller så kan det være at de ble lagt til av admin.
-## Apps (Figma)
+## Apps ([Figma](https://www.figma.com/design/kMkTUjpAfLm7iCGBfJY29F/Untitled?node-id=0-1&t=NluZZ85m8prvQAlU-1))
 ![image](https://github.com/user-attachments/assets/d715d876-e5d4-4c97-8b1a-081f92dc46a7)
 
 # Views, Procedures og Triggers
