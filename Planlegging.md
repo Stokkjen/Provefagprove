@@ -9,9 +9,9 @@ Målet med oppgaven er å lage en app for å ha kontroll på reservesjoner for e
 - Det samme gjelder for prosedyrer, for å få funksjonaliteten som er nødvendig.
 - Så kommer jeg til å lage illustrasjoner av appene som kreves, inkludert knapper, modaler, gridder og hva enn som trengs.
 - Når jeg har en klar idé over hvordan ting skal fungere og se ut, begynner jeg med å definere alle objektene i SQL. Dette inkluderer da tabeller, views og procedures.
-- Hvis nødvendig, gjør jeg modifikasjoner til triggerene for å få på plass spesifikke tilganger eller funksjonalitet rundt modifisering av data i tabeller.
-  - Når dette er gjort, vil backend delen være på plass. Det kan hende at jeg eventuelt går tilbake senere å gjør småendringer hvis det dukker opp noe.
+- Da skal backend delen være på plass, men hvis nødvendig, gjør jeg modifikasjoner til triggerene for å få på plass spesifikke tilganger eller funksjonalitet rundt modifisering av data i tabeller.
 - Da begynner jeg å jobbe på frontend delen. Da følger jeg bare Figma skissen, og tar i bruk views og prosedyrer som jeg har laget.
+- Hvis nødvendig kan det hende at jeg går tilbake senere å gjør småendringer hvis noe dukket opp.
 - Når jeg er ferdig med det og hvis jeg får tid, er det egentlig hovedsaklig bare for meg å legge til noen bonuser hvis jeg får tid til det.
 - Når presentasjonen nærmer seg begynner jeg å forberede meg.
 ## Timeplan
@@ -39,11 +39,27 @@ Målet med oppgaven er å lage en app for å ha kontroll på reservesjoner for e
 - Forberede seg til presentasjon.
 ### 12.02.25 - Onsdag:
 - Presentasjon
+### Kostnad:
+- Timer: 37.5
+- Timekostnad: 155kr
+- Totalkostnad: 5812,5kr
 
 # Teknologi
- - Appframe: Omega365 sitt rammeverk. Dette er det jeg valgte, siden jeg kjenner meg godt igjen der. Det finnes mange verktøy innebygd.
- - CTP: ellers kjent som "Core Technology Platform" er passende, siden den holder seg godt oppdatert, og bruker Vue.js, som er et rammeverk som støtter gjenbrukbare komponenter, og har mange innebygde komponenter allerede.
- - Appdesigner: lar deg lage appene. Her får du mange kjekke verktøy som du kan bruke for vise frem data, og å gjøre endringer.
- - Code Search: lar deg se på koden i andre apper. Dette er et meget kjekt verktøy å bruke når en ikke husker eller ikke vet hvordan en bruker spesifikke komponenter eller hvis du vil vite hvordan en gjør ting i javascript.
- - Snippets: litt lik code search, men mer oversiktlig og klar. Snippets lar deg lese dokumentasjon om spesifikke komponenter, f.eks hvilken propper de har og hva de gjør.
- - Data API: tillater deg å kommunisere fra frontend til backend. Ved hjelp av dataobjekter kan du koble til views. (Ikke tabeller. Det beste du kan koble til er tabell view, et view som er designet for å vise tabellen med sikkerhet integrert.) Den kan også kjøre prosedyrer.
+## Omega365:
+- Appframe - Omega365 sitt rammeverk. Dette er det jeg valgte, siden jeg kjenner meg godt igjen der. Det finnes mange verktøy innebygd.
+- CTP - ellers kjent som "Core Technology Platform" er passende, siden den holder seg godt oppdatert, og bruker Vue.js, som er et rammeverk som støtter gjenbrukbare komponenter, og har mange innebygde komponenter allerede.
+- Appdesigner - lar deg lage appene. Her får du mange kjekke verktøy som du kan bruke for vise frem data, og å gjøre endringer.
+- Code Search - lar deg se på koden i andre apper. Dette er et meget kjekt verktøy å bruke når en ikke husker eller ikke vet hvordan en bruker spesifikke komponenter eller hvis du vil vite hvordan en gjør ting i javascript.
+- Snippets - litt lik code search, men mer oversiktlig og klar. Snippets lar deg lese dokumentasjon om spesifikke komponenter, f.eks hvilken propper de har og hva de gjør.
+- Data API - tillater deg å kommunisere fra frontend til backend. Ved hjelp av dataobjekter kan du koble til views. (Ikke tabeller. Det beste du kan koble til er tabell view, et view som er designet for å vise tabellen med sikkerhet integrert.) Den kan også kjøre prosedyrer.
+## Annet:
+- Jeg kommer til å bruke internettet for å finne ut av syntax i kode og debugging og litt andre greier som kan være greit.
+- Det kan hende jeg bruker Tor eller kolleger.
+- Det er en mulighet for at jeg bruker ChatGPT for lik grunn som internettet.
+
+# Skisser
+## Databasemodell (DrawSQL)
+INSERT IMAGE HERE
+- Tabell 1: Beskrivelse.
+## App (Figma)
+INSERT IMAGE HERE
