@@ -2,8 +2,7 @@
 ## 05.02.25 - Onsdag:
 - Gikk gjennom informasjon om prøvefagprøven.
 - Skrevet planleggingen.
-- Tegnet opp datamodell med DrawSQL.
-- Tegnet opp apper som skal være med (èn for admin, èn for kunde).
+- Tegnet skisser med DrawSQL (datamodell) og Figma (apper).
 - Gjort noen endringer i planlegging for å tilpasse datamodellen og appene (det endte opp annerledes enn forventet).
 - Notert ned Views, Prosedyrer og Triggere som kreves i planen.
 ## 06.02.25 - Torsdag:
