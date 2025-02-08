@@ -14,11 +14,15 @@
 ## 07.02.25 - Fredag:
 - Fikset opp i sikkerheten ved hjelp av Capabilities. Gått gjennom alle triggere og views, og vurdert hvilke tilganger Admin og Kunde bør ha, og implementert.
 - Lagt til to tabeller: Tables (bordene deres, inkludert antall seter) og ReservationsTables (for å linke en reservation til ett eller flere bord)
-  - Dette er for å få med endringen som jeg fikk. Det var at det måtte være logikk for to firmannsbord og to tomannsbord.
+  - Dette er for å få med twisten jeg fikk (det må være logikk for to firmannsbord og to tomannsbord).
 - Begynt på appen. Har jobbet mye med kunden sin side, og "New Revision" modalen.
 - Har jobbet med BookReservation prosedyren for å tilpasse endringen. Ble ikke helt ferdig
 ## (08-09).02.25 - Helg:
-- 
+- Har begynt på Admin appen.
+  - Laget Today's Reservations tab, som planlagt.
+  - Laget All Reservations tab, også som planlagt.
+  - Laget Tables tab. Dette er nødvendig (eller veldig greit for admins) etter twisten.
+  - AVVIK: Reservations Holders.
 ## 10.02.25 - Mandag:
 - 
 ## 11.02.25 - Tirsdag:
