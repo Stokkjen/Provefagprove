@@ -4,7 +4,7 @@
 Oppgaven er å lage et system for en restaurant (og kundene deres), hvor restauranten kan se alle reservasjoner, og kundene skal kunne lage reservasjoner, se dem, og kunne kansellere dem.
 
 ## Universell Utforming
-Jeg har brukt grids som er greie til å navigere i for de fleste, men det kan være litt slit å holde på å trykke på en liten rute for noen. Da har jeg prøvd å få til slik at det blir brukt modaler og knapper der mulig for lettere interaksjon. I tillegg vil dette gjøre det lettere å forstå hvordan en navigerer og gjør ting.
+Jeg har brukt grids som er greie til å navigere i for de fleste, men for noen kan det være litt slit å holde på å trykke på en liten rute. Da har jeg prøvd å få til slik at det blir brukt modaler og knapper der mulig for lettere interaksjon. I tillegg vil dette gjøre det lettere å forstå hvordan en navigerer og gjør ting.
 
 ## Sikkerhet !
 Her har jeg brukt noe som vi kaller Capabilities. Jeg har to capabilities: IsAdmin og IsCustomer. (Forklar hvordan de er tilgitt.) I SQL er det innebygde views som tillatter deg lett å sjekke hvilke capabilities noen har tilgang til. Jeg har da laget et view som er spesifisert mot dette systemet, som rett og slett returnerer om du har IsAdmin eller IsCustomer capabilitien, som gjør sikkerheten meget lett å håndtere.
@@ -61,3 +61,10 @@ Vi bruker også mye triggere, som kjører sikkerhetssjekk omtrent likt som sikke
 ### Github
 - Dette er et veldig greit verktøy for å dokumentere ting på, og er lett å dele.
 - Det er ryddig og ser fint ut, og det er lett å få inn bilder og lignende for å illustrere.
+
+## Avvik
+Jeg holdt meg OK på planen, men selvfølgelig ble det avvik her og der. Jeg hadde ikke den beste planen, så det var en del ting jeg måtte legge til eller fjerne.
+- Sikkerhet: Jeg hadde ikke noe særlige planer for sikkerhet, men det jeg begynte med var OrgUnit struktur. Dette fant jeg ut av senere at ikke gidde helt mening. Da lagde jeg en egen tabell for custom sikkerhet, men dette var ikke god practice. Da endte jeg opp med å bruke en sikkerhetsmodell som var litt lik planen for custom sikkerheten, men der brukte jeg capabilities i stedenfor.
+- Reservations Holders: Jeg la til en tab i Admin sida hvor en kan se alle som har hatt en reservasjon. Dette er fordi den kan være veldig nyttig for å ha oversikt, og gir admin mulighet for å anonymisere noen hvis det trengs. Jeg lagde også et view for dette som ikke var inkludert i planen.
+- Lagt til tabell som ikke var med i planen: Uptimes. Denne var egentlig en veldig viktig del for restauranten, siden ellers hadde restauranten vært oppe hver dag og natt.
+- Fjernet view Reservations Today: Dette var fordi jeg hadde allerede et view (som var med i planen): All Reservations som egentlig var akkurat det samme, så da brukte jeg det viewet med et simpelt filter i frontenden.
