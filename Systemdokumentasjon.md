@@ -26,23 +26,24 @@ Vi bruker også mye triggere, som kjører sikkerhetssjekk omtrent likt som sikke
     - Today's Reservations: Viser alle reservasjoner hos restauranten som er i dag, som er kjekt for å ha god oversikt over dagen.
     - All Reservations: Viser alle reservasjoner som finnes. Her kan du også kansellere reservasjoner.
     - Reservations Holders: Her har de tilgang til alle som har laget en reservasjon. Du kan gjemme noen hvis de er urelevante, eller, for personvern, kan du anonymisere kunder, slik at informasjon som navn og telefon nummer fjernes.
-    - Tables: Her har de tilgang til bordene deres. Her kan en ha en oversikt over bord en har.
+    - Tables: Her har de en oversikt over bordene deres.
 - Customer:
   - New Reservation modalen er tilgjengelig, og åpnes av en knapp.
   - Her har kunden bare tilgang til sine egne reservasjoner.
   - Kunden kan kansellere en reservasjon om de vil.
 ### Backend (SQL)
 - Tabeller
-  - Reservations:
-  - ReservationsHolders:
-  - Tables:
-  - ReservationsTables:
-  - Uptimes: 
+  - Reservations: Her ligger mesteparten av informasjonen til reservasjonene, inkludert gjester, reservasjons holder, tid og om den er kansellert.
+  - ReservationsHolders: Dette inneholder basic informasjon om forskjellige folk som har reservert. Hvis Admin la til personen, er det bare Navn og Telefon. Men hvis det er en Customer som har gjort en reservasjon, så vil den referere til kunden sin bruker i systemet.
+  - Tables: Her har vi informasjon om bord som de har, og hvor mange seter hvert bord har.
+  - ReservationsTables: Her kobler vi en reservasjon og et bord. Denne strukturen tillater en reservasjon å ha flere bord.
+  - Uptimes: Her har vi oppetidene til restauranten.
 - Views
-  - AllReservations:
+  - AllReservations: Denne henter informasjon fra Reservations og ReservationsHolders tabellen for å få oversiktlig informasjon over alle reservasjoner. (Grunnet sikkerhets viewet i Reservations vil bare Customer se sine egne reservasjoner.)
+  - ReservationsHolders: Grunnet valget i tabellen ReservationsHolders av enten direkte informasjon (navn og telefon) eller referanse til personen i systemet, tar dette viewet og kombinerer dem, slik at all informasjonen ligger på samme sted.
   - 
 - Prosedyrer
-  - BookReservation:
+  - BookReservation: Dette er en relativt avansert prosedyre. Denne booker en reservasjon for kunden. Her må den gjøre en god del sjekker og kalkulasjoner for å få ønsket resultat, som hovedsaklig er sjekk om det er nok bord for reservasjonen, og så kalkulere hvilke bord reservasjonen skal bruke for optimale resultater.
   - 
 
 ## Teknologi
