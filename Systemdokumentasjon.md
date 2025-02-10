@@ -6,6 +6,22 @@ Oppgaven er å lage et system for en restaurant (og kundene deres), hvor restaur
 ## Universell Utforming
 Jeg har brukt grids som er greie til å navigere i for de fleste, men for noen kan det være litt slit å holde på å trykke på en liten rute. Da har jeg prøvd å få til slik at det blir brukt modaler og knapper der mulig for lettere interaksjon. I tillegg vil dette gjøre det lettere å forstå hvordan en navigerer og gjør ting.
 
+## Teknologi
+### Omega365 CTP (Core Technology Platform) rammeverk
+- Dette er en av bedriftens standarder, og det er noe jeg har mye erfaring med.
+- Det er veldig grei å bruke, fordi det finnes mange ferdig-lagte komponenter, som for eksempel grids som jeg brukte mye av.
+- Dette rammeverket består da av:
+  - Vue.js
+  - Bootstrap
+  - SQL
+### Figma
+- Dette er et fint værktøy for å tegne opp en skisse av en eller flere apper.
+### DrawSQL
+- Dette er flott for å ha en fin oversikt over en datamodell.
+### Github
+- Dette er et veldig greit verktøy for å dokumentere ting på, og er lett å dele.
+- Det er ryddig og ser fint ut, og det er lett å få inn bilder og lignende for å illustrere.
+
 ## Sikkerhet !
 Her har jeg brukt noe som vi kaller Capabilities. Jeg har to capabilities: IsAdmin og IsCustomer. (Forklar hvordan de er tilgitt.) I SQL er det innebygde views som tillatter deg lett å sjekke hvilke capabilities noen har tilgang til. Jeg har da laget et view som er spesifisert mot dette systemet, som rett og slett returnerer om du har IsAdmin eller IsCustomer capabilitien, som gjør sikkerheten meget lett å håndtere.
 I sikkerhets viewet til tabellene sjekker jeg om du har tilgang til tabellen (via et annet innebygd view som returnerer alle tabeller du har tilgang til via modulene nevnt tidligere), og jeg sjekker også opp mot om du har IsAdmin eller IsCustomer capabilities. Der blir det også litt mer custom basert på tabell. For eksempel: Admin skal ha tilgang til alle reservasjonene, men Customer skal bare ha tilgang til sine egne reservasjoner; men, hvis vi tenker på for eksempel åpningstider, da skal både Admin og Customer kunne se alt.
@@ -45,22 +61,6 @@ Vi bruker også mye triggere, som kjører sikkerhetssjekk omtrent likt som sikke
 - Prosedyrer
   - BookReservation: Dette er en relativt avansert prosedyre. Denne booker en reservasjon for kunden. Her må den gjøre en god del sjekker og kalkulasjoner for å få ønsket resultat, som hovedsaklig er sjekk om det er nok bord for reservasjonen, og så kalkulere hvilke bord reservasjonen skal bruke for optimale resultater.
   - 
-
-## Teknologi
-### Omega365 CTP (Core Technology Platform) rammeverk
-- Dette er en av bedriftens standarder, og det er noe jeg har mye erfaring med.
-- Det er veldig grei å bruke, fordi det finnes mange ferdig-lagte komponenter, som for eksempel grids som jeg brukte mye av.
-- Dette rammeverket består da av:
-  - Vue.js
-  - Bootstrap
-  - SQL
-### Figma
-- Dette er et fint værktøy for å tegne opp en skisse av en eller flere apper.
-### DrawSQL
-- Dette er flott for å ha en fin oversikt over en datamodell.
-### Github
-- Dette er et veldig greit verktøy for å dokumentere ting på, og er lett å dele.
-- Det er ryddig og ser fint ut, og det er lett å få inn bilder og lignende for å illustrere.
 
 ## Avvik
 Jeg holdt meg OK på planen, men selvfølgelig ble det avvik her og der. Jeg hadde ikke den beste planen, så det var en del ting jeg måtte legge til eller fjerne.
