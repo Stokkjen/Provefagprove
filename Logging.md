@@ -24,6 +24,10 @@
   - Laget Tables tab. Dette er nødvendig (eller veldig greit for admins) etter twisten.
   - AVVIK: Reservations Holders.
 ## 10.02.25 - Mandag:
-- 
+- Jeg jobbet litt med å få muligheten til å "fjerne" bord, men da ble det for mye å ha øye på, så lot det være.
+- AVVIK: Lagt til en ny tabell: Uptimes. Denne er en nødvendig del jeg ikke tenkte på i planleggings fasen.
+  - Denne tabellen inneholder dager og tidene restauranten er oppe.
+- AVVIK: For personværn har jeg lagt til en "Anonymize" knapp i Reservations Holders tabben, og "Anynymous" felt til ReservationsHolders tabellen.
+- Har gjort en god del små-fiks og forbedringer.
 ## 11.02.25 - Tirsdag:
 - 
