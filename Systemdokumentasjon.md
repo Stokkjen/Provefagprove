@@ -22,28 +22,39 @@ Jeg har brukt grids som er greie til å navigere i for de fleste, men for noen k
 - Dette er et veldig greit verktøy for å dokumentere ting på, og er lett å dele.
 - Det er ryddig og ser fint ut, og det er lett å få inn bilder og lignende for å illustrere.
 
-## Sikkerhet !
-Her har jeg brukt noe som vi kaller Capabilities. Jeg har to capabilities: IsAdmin og IsCustomer. (Forklar hvordan de er tilgitt.) I SQL er det innebygde views som tillatter deg lett å sjekke hvilke capabilities noen har tilgang til. Jeg har da laget et view som er spesifisert mot dette systemet, som rett og slett returnerer om du har IsAdmin eller IsCustomer capabilitien, som gjør sikkerheten meget lett å håndtere.
-I sikkerhets viewet til tabellene sjekker jeg om du har tilgang til tabellen (via et annet innebygd view som returnerer alle tabeller du har tilgang til via modulene nevnt tidligere), og jeg sjekker også opp mot om du har IsAdmin eller IsCustomer capabilities. Der blir det også litt mer custom basert på tabell. For eksempel: Admin skal ha tilgang til alle reservasjonene, men Customer skal bare ha tilgang til sine egne reservasjoner; men, hvis vi tenker på for eksempel åpningstider, da skal både Admin og Customer kunne se alt.
-Vi bruker også mye triggere, som kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellene. Disse triggerene er da sjekker og logikk som kjører etter INSERT, UPDATE eller DELETE av data i spesifikke tabeller. Da må jeg, likt som i sikkerhets viewet til tabellene, legge til en sjekk på om du har tilgang til tabellen, men i tillegg til det, må jeg sjekke om de har Edit eller Delete permissions, kommer ann på hvilken trigger. I tillegg til det, likt som sikkerhets viewet til tabellene, må jeg sjekke opp om de er Admin eller Customer, og bruke logikk på hva Admin skal kunne gjøre og hva Customer skal kunne gjøre.
+## Sikkerhet
+### Capabilities
+Her har jeg brukt noe som vi kaller Capabilities. Jeg har to capabilities: "Can Administrate Omega Gourmet" (IsAdmin) og "Can Manage Reservations Omega Gourmet" (IsCustomer). Disse kan du da legge til på en eller flere roller.
+### Moduler
+Moduler har tilganger på tabeller og apper. Da har jeg laget to moduler: "Omega Gourmet Admin" og "Omega Gourmet Customer", slik at Admin har tilgang til Admin appen, mens Customer har tilgang til Customer appen. Som nevnt så kan du også gi tilgang til tabeller (Read, Edit og Delete). Da har jeg gitt Admin tilganger til omtrent alt, mens Customer får ikke like mange tilganger.
+### Roller
+Disse rollene er det som knytter Capabilities og Moduler til ett. Jeg har da to roller: "Omega Gourmet Admin" og "Omega Gourmet Customer" (lik Modulene). Så da har Admin rollen tilgang til Admin modulen og Admin capabilitien, og Customer rollen har tilgang til Customer modulen og Customer capabilitien. Disse knytter en da på noe som heter Org Units, og en person.
+### Org Units
+Dette er ikke veldig viktig for denne oppgaven, men simpelt forklart er dette en slags "lokasjon". Ved hjelpen av disse kan du da knytte roller til en person på en av disse lokasjonene.
+### Custom view for tilganger
+I SQL er det innebygde views som tillatter deg lett å sjekke hvilke capabilities noen har tilgang til. Jeg har da laget et view som er spesifisert mot dette systemet, som rett og slett returnerer om du har IsAdmin eller IsCustomer capabilitien, som gjør sikkerheten meget lett å håndtere.
+### Sikkerhets view til tabeller
+Her sjekker jeg om du har tilgang til tabellen (via et annet innebygd view som returnerer alle tabeller du har tilgang til via modulene nevnt tidligere), og jeg sjekker også opp mot om du har IsAdmin eller IsCustomer capabilities. Der blir det også litt mer custom basert på tabell. For eksempel: Admin skal ha tilgang til alle reservasjonene, men Customer skal bare ha tilgang til sine egne reservasjoner; men, hvis vi tenker på for eksempel åpningstider, da skal både Admin og Customer kunne se alt.
+### Triggere
+Triggere kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellene. Disse triggerene er da sjekker og logikk som kjører etter INSERT, UPDATE eller DELETE av data i spesifikke tabeller. Da må jeg, likt som i sikkerhets viewet til tabellene, legge til en sjekk på om du har tilgang til tabellen, men i tillegg til det, må jeg sjekke om de har Edit eller Delete permissions, kommer ann på hvilken trigger. I tillegg til det, likt som sikkerhets viewet til tabellene, må jeg sjekke opp om de er Admin eller Customer, og bruke logikk på hva Admin skal kunne gjøre og hva Customer skal kunne gjøre.
 
-## Arkitektur !
+## Arkitektur
 ### Frontend
-- New Reservation:
+- New Reservation
   - Dette er egentlig en egen app, men blir brukt som en komponent jeg bruker i hovedappene.
   - Her kan du lage en reservasjon opptil to uker i fremtiden. Informasjon du gir er:
     - Gjester
     - Navn og Telefon (Bare hvis du er Admin; hvis du er Customer fylles disse automatisk inn)
     - Tid (Per nå er det slik at alle reservasjoner varer 2 timer, så en trenger bare å fylle inn starttid)
     - Kommentar (Dette kan da være hva som helst, for eksempel allergi)
-- Admin:
+- Admin
   - New Reservation modalen er tilgjengelig, og åpnes av en knapp.
   - Admin har tilgang til fire forskjellige grids:
     - Today's Reservations: Viser alle reservasjoner hos restauranten som er i dag, som er kjekt for å ha god oversikt over dagen.
     - All Reservations: Viser alle reservasjoner som finnes. Her kan du også kansellere reservasjoner.
     - Reservations Holders: Her har de tilgang til alle som har laget en reservasjon. Du kan gjemme noen hvis de er urelevante, eller, for personvern, kan du anonymisere kunder, slik at informasjon som navn og telefon nummer fjernes.
     - Tables: Her har de en oversikt over bordene deres.
-- Customer:
+- Customer
   - New Reservation modalen er tilgjengelig, og åpnes av en knapp.
   - Her har kunden bare tilgang til sine egne reservasjoner.
   - Kunden kan kansellere en reservasjon om de vil.
@@ -57,10 +68,9 @@ Vi bruker også mye triggere, som kjører sikkerhetssjekk omtrent likt som sikke
 - Views
   - AllReservations: Denne henter informasjon fra Reservations og ReservationsHolders tabellen for å få oversiktlig informasjon over alle reservasjoner. (Grunnet sikkerhets viewet i Reservations vil bare Customer se sine egne reservasjoner.)
   - ReservationsHolders: Grunnet valget i tabellen ReservationsHolders av enten direkte informasjon (navn og telefon) eller referanse til personen i systemet, tar dette viewet og kombinerer dem, slik at all informasjonen ligger på samme sted.
-  - 
+  - MyAccess: Dette viewet sjekker på Capabilities som du har, og returnerer IsAdmin og IsCustomer, som gjør ting mye lettere for sikkerheten i sikkerhets view til tabeller og triggere.
 - Prosedyrer
   - BookReservation: Dette er en relativt avansert prosedyre. Denne booker en reservasjon for kunden. Her må den gjøre en god del sjekker og kalkulasjoner for å få ønsket resultat, som hovedsaklig er sjekk om det er nok bord for reservasjonen, og så kalkulere hvilke bord reservasjonen skal bruke for optimale resultater.
-  - 
 
 ## Avvik
 Jeg holdt meg OK på planen, men selvfølgelig ble det avvik her og der. Jeg hadde ikke den beste planen, så det var en del ting jeg måtte legge til eller fjerne.
