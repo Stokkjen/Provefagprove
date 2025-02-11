@@ -29,5 +29,10 @@
   - Denne tabellen inneholder dager og tidene restauranten er oppe.
 - AVVIK: For personværn har jeg lagt til en "Anonymize" knapp i Reservations Holders tabben, og "Anynymous" felt til ReservationsHolders tabellen.
 - Har gjort en god del små-fiks og forbedringer.
+- Skrevet en god del av systemdokumentasjonen.
 ## 11.02.25 - Tirsdag:
-- 
+- Gjort små-fiks.
+- Testfremvisning med Tor, Øyvind og Iver.
+- Fullført systemdokumentasjon.
+- Skrevet brukerdokumentasjon (Norsk og Engelsk).
+- Laget testrapport.
