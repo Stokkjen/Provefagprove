@@ -2,11 +2,13 @@
 ## Ny reservasjon
 Dette er et vindu som popper opp når du klikker på "New Reservation" knappen i enten Kunde appen eller Admin appen, hvor du kan booke en reservasjon.
 ### Oversikt
-
+Her ser du selve modalen. Hvis du er en kunde, så fylles "Name" og "Phone" automatisk basert på brukeren din. Hvis du er en admin, så må du fylle dette inn selv.
 ![image](https://github.com/user-attachments/assets/ee85d570-d32b-4214-86a5-cf0ae117a1e9)
 ### Dato og Tid
+Hvis du klikker på "Date and Time" feltet, kan du velge dato og tid. (Det er bare mulig å booke 2 uker frem i tid!)
 ![image](https://github.com/user-attachments/assets/aec99a2b-1146-4a1f-8bd2-78936c932e87)
 ### Lag reservasjon
+Du må også fylle inn antall gjester (alle inkludert, altså hvor mange seter restauranten skal gjøre rede for).
 ![image](https://github.com/user-attachments/assets/24f27364-2782-427e-be75-3685ab36fb0b)
 ## Kunde
 ### Egne reservasjoner
