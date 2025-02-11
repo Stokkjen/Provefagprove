@@ -7,8 +7,8 @@
   <th>Hva feilet? (Hvis noe feilet)</th>
   <th>Status</th>
   <tr>
-    <td>Test</td>
-    <td>Test</td>
+    <td></td>
+    <td></td>
     <td><img src=""/></td>
     <td></td>
     <td></td>
@@ -23,8 +23,8 @@
   <th>Hva feilet? (Hvis noe feilet)</th>
   <th>Status</th>
   <tr>
-    <td>Test</td>
-    <td>Test</td>
+    <td></td>
+    <td></td>
     <td><img src=""/></td>
     <td></td>
     <td></td>
@@ -39,8 +39,8 @@
   <th>Hva feilet? (Hvis noe feilet)</th>
   <th>Status</th>
   <tr>
-    <td>Test</td>
-    <td>Test</td>
+    <td></td>
+    <td></td>
     <td><img src=""/></td>
     <td></td>
     <td></td>
