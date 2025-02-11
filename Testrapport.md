@@ -11,7 +11,7 @@
     <td>Test</td>
     <td><img src=""/></td>
     <td></td>
-    <td>✅</td>
+    <td></td>
   </tr>
 </table>
 
@@ -27,7 +27,7 @@
     <td>Test</td>
     <td><img src=""/></td>
     <td></td>
-    <td>✅</td>
+    <td></td>
   </tr>
 </table>
 
@@ -43,6 +43,6 @@
     <td>Test</td>
     <td><img src=""/></td>
     <td></td>
-    <td>✅</td>
+    <td></td>
   </tr>
 </table>
