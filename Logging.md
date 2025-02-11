@@ -34,5 +34,5 @@
 - Gjort små-fiks.
 - Testfremvisning med Tor, Øyvind og Iver.
 - Fullført systemdokumentasjon.
-- Skrevet brukerdokumentasjon (Norsk og Engelsk).
+- Skrevet brukeranvisning (Norsk og Engelsk).
 - Laget testrapport.
