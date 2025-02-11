@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/56ad7524-55af-473f-8cc2-3cbce5fdeb80)# Testrappport
+# Testrappport
 ## Ny Reservasjon
 <table>
   <th>Funksjon</th>
@@ -60,6 +60,13 @@
     <td>✅</td>
   </tr>
   <tr>
+    <td>Tastatur navigasjon</td>
+    <td>Det skal være lett mulig å navigere siden.</td>
+    <td></td>
+    <td>Det å navigere med tab og piltaster virker OK, men det når en åpner New Reservation modalen hopper ikke navigeringen til modalen, og du må trykke innpå først. "Cancel Reservation" knappen virker heller ikke med tastatur.</td>
+    <td>❌</td>
+  </tr>
+  <tr>
     <td>New Reservation reloader grid</td>
     <td>Når en lager en ny reservasjon via New Reservation modalen skal gridden reloade for å vise den nye reservasjonen.</td>
     <td></td>
@@ -88,6 +95,13 @@
     <td><img src="https://github.com/user-attachments/assets/57d91656-b784-4112-93e5-7b0f05504ede"/></td>
     <td>Kanselleringsknappen forsvinner når i dag eller tidligere (dette ble testet 11/02/2025.</td>
     <td>✅</td>
+  </tr>
+  <tr>
+    <td>Tastatur navigasjon</td>
+    <td>Det skal være lett mulig å navigere siden.</td>
+    <td></td>
+    <td>Det å navigere med tab og piltaster virker OK, men det når en åpner New Reservation modalen hopper ikke navigeringen til modalen, og du må trykke innpå først. Knapper inni grids virker heller ikke med tastatur.</td>
+    <td>❌</td>
   </tr>
   <tr>
     <td>Hide/Show</td>
