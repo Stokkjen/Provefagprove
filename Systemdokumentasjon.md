@@ -59,8 +59,8 @@ Triggere kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellen
   - Her har kunden bare tilgang til sine egne reservasjoner.
   - Kunden kan kansellere en reservasjon om de vil.
 ### Backend (SQL)
-- Tabeller
 ![image](https://github.com/user-attachments/assets/a3e721a0-ce3c-4853-b92f-a249fab69daf)
+- Tabeller
   - Reservations: Her ligger mesteparten av informasjonen til reservasjonene, inkludert gjester, reservasjons holder, tid og om den er kansellert.
   - ReservationsHolders: Dette inneholder basic informasjon om forskjellige folk som har reservert. Hvis Admin la til personen, er det bare Navn og Telefon. Men hvis det er en Customer som har gjort en reservasjon, så vil den referere til kunden sin bruker i systemet.
   - Tables: Her har vi informasjon om bord som de har, og hvor mange seter hvert bord har.
