@@ -1,4 +1,4 @@
-# Testrappport
+![image](https://github.com/user-attachments/assets/56ad7524-55af-473f-8cc2-3cbce5fdeb80)# Testrappport
 ## Ny Reservasjon
 <table>
   <th>Funksjon</th>
@@ -46,7 +46,7 @@
   <th>Status</th>
   <tr>
     <td>Kansellering skjules</td>
-    <td>Kansellering skal kansellere skjule reservasjon til standard, så lenge "Include Cancel" er av.</td>
+    <td>Kansellering skal kansellere og skjule reservasjon til standard, så lenge "Include Cancel" er av.</td>
     <td><img src="https://github.com/user-attachments/assets/772910dd-5154-43ad-82b3-4323dd7740fe"/>
         <img src="https://github.com/user-attachments/assets/6c1d710c-f658-4fde-a1ca-67dc70bca4c8"/></td>
     <td>Kansellerings knappen kansellerer og skjuler reservasjon. Når jeg trykker "Include Cancelled", vises den.</td>
@@ -76,38 +76,39 @@
   <th>Hva skjedde?</th>
   <th>Status</th>
   <tr>
+    <td>Kansellering skal skjule</td>
+    <td>Kansellering skal kansellere og skjule reservasjon til standard, så lenge "Include Cancel" er av.</td>
     <td></td>
-    <td></td>
-    <td><img src=""/></td>
-    <td></td>
-    <td></td>
+    <td>Kansellerings knappen kansellerer og skjuler reservasjon. Når jeg trykker "Include Cancelled", vises den.</td>
+    <td>✅</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td><img src=""/></td>
-    <td></td>
-    <td></td>
+    <td>Bare kansellere fremtidige reservasjon</td>
+    <td>Det skal bare være mulig å kansellere reservasjoner frem i tid, ikke i dag eller i går.</td>
+    <td><img src="https://github.com/user-attachments/assets/57d91656-b784-4112-93e5-7b0f05504ede"/></td>
+    <td>Kanselleringsknappen forsvinner når i dag eller tidligere (dette ble testet 11/02/2025.</td>
+    <td>✅</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td><img src=""/></td>
-    <td></td>
-    <td></td>
+    <td>Hide/Show</td>
+    <td>Knapp under felt "Action" skal endre mellom "Hide" og "Show" basert på om den er skjult eller ikke.</td>
+    <td><img src="https://github.com/user-attachments/assets/2b95288a-f612-413b-a70e-6676fb17ced9"/></td>
+    <td>Knappen endrer seg basert på kolonne "Hidden", og virker som forventet.</td>
+    <td>✅</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td><img src=""/></td>
-    <td></td>
-    <td></td>
+    <td>Anonymize</td>
+    <td>Anonymize knapp bør skjule bruker (selv om "Include Hidden" er på), og fjerne navn og telefon.</td>
+    <td><img src="https://github.com/user-attachments/assets/847c1def-87a7-46e0-af30-cfcb69ee87ac"/>
+        <img src="https://github.com/user-attachments/assets/db508c9b-f35b-4817-b0b0-4eec3ca2597b"/></td>
+    <td>Når jeg trykket "Anonymize" knappen og bekreftet advarselen, forsvant den med en gang, selv om jeg har "Include Hidden" på. Navn og Telefon ble tom i databasen.</td>
+    <td>✅</td>
   </tr>
   <tr>
+    <td>New Reservation reloader grid</td>
+    <td>Når en lager en ny reservasjon via New Reservation modalen skal alle griddene som har relasjon bli reloaded.</td>
     <td></td>
-    <td></td>
-    <td><img src=""/></td>
-    <td></td>
-    <td></td>
+    <td>Når jeg lager en ny reservasjon med ny holder, reloades All Reservations grid og Reservations Holders grid, som gjør slik at når jeg blar til dem etterpå så er de allerede lastet inn.</td>
+    <td>✅ Måtte stoppe Today's Reservations fra å loade, fordi det er ikke mulig å lage en reservasjon for i dag.</td>
   </tr>
 </table>
