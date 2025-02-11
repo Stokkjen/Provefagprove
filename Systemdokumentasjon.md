@@ -1,7 +1,7 @@
 # Systemdokumentasjon
 
 ## Oppgave
-Oppgaven er å lage et system for en restaurant (og kundene deres), hvor restauranten kan se alle reservasjoner, og kundene skal kunne lage reservasjoner, se dem, og kunne kansellere dem.
+Oppgaven er å lage et system for en restaurant (og kundene deres), hvor restauranten kan se alle reservasjoner, og kundene skal kunne lage reservasjoner, se dem, og kunne kansellere dem. Originalt var det slik at det kunne være maksimum 12 gjester, men på den tredje dagen fikk jeg en endring, som var at jeg måtte ta høyde for at det skulle være 2 tomannsbord og 2 firmannsbord.
 
 ## Universell Utforming
 Jeg har brukt grids som er greie til å navigere i for de fleste, men for noen kan det være litt slit å holde på å trykke på en liten rute. Da har jeg prøvd å få til slik at det blir brukt modaler og knapper der mulig for lettere interaksjon. I tillegg vil dette gjøre det lettere å forstå hvordan en navigerer og gjør ting.
