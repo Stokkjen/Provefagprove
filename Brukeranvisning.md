@@ -2,7 +2,7 @@
 ## Ny reservasjon
 Dette er et vindu som popper opp når du klikker på "New Reservation" knappen i enten Kunde appen eller Admin appen, hvor du kan booke en reservasjon.
 ### Oversikt
-Her ser du selve modalen. Hvis du er en kunde, så fylles "Name" og "Phone" automatisk basert på brukeren din. Hvis du er en admin, så må du fylle dette inn selv. Du får også se åpningstidene til restauranten.
+Her ser du selve vinduet. Hvis du er en kunde, så fylles "Name" og "Phone" automatisk basert på brukeren din. Hvis du er en admin, så må du fylle dette inn selv. Du får også se åpningstidene til restauranten.
 
 ![image](https://github.com/user-attachments/assets/ee85d570-d32b-4214-86a5-cf0ae117a1e9)
 ### Dato og Tid
