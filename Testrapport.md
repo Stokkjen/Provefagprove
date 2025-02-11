@@ -59,6 +59,13 @@
     <td>Kanselleringsknappen forsvinner når i dag eller tidligere (dette ble testet 11/02/2025).</td>
     <td>✅</td>
   </tr>
+  <tr>
+    <td>New Reservation reloader grid</td>
+    <td>Når en lager en ny reservasjon via New Reservation modalen skal gridden reloade for å vise den nye reservasjonen.</td>
+    <td></td>
+    <td>Gridden reloader med en gang en lager reservasjonen.</td>
+    <td>✅</td>
+  </tr>
 </table>
 
 ## Admin
@@ -68,6 +75,34 @@
   <th>Bilde(r)</th>
   <th>Hva skjedde?</th>
   <th>Status</th>
+  <tr>
+    <td></td>
+    <td></td>
+    <td><img src=""/></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td><img src=""/></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td><img src=""/></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td><img src=""/></td>
+    <td></td>
+    <td></td>
+  </tr>
   <tr>
     <td></td>
     <td></td>
