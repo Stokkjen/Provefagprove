@@ -25,7 +25,7 @@ Hvis du trykker på "Cancel Reservation", kan du kansellere reservasjonen din. D
 
 ![image](https://github.com/user-attachments/assets/12a9e88b-c724-418e-bf88-646d4c8a6d44)
 ### Inkluder
-Den reservasjonen vil da forsvinne. For å vise den igjen, kan du trykke på "Include Cancel". Da får den en "check" på seg, og alle kansellerte reservasjoner vises.
+Den reservasjonen vil da forsvinne. For å vise den igjen, kan du trykke på "Include Cancelled". Da får den en "check" på seg, og alle kansellerte reservasjoner vises.
 
 ![image](https://github.com/user-attachments/assets/aacc35ba-3ccb-4c3e-be2a-9f25bb0e3344)
 ## Admin
@@ -48,7 +48,7 @@ Trykker du "Include Cancelled" vil du se alle reservasjoner, inkludert de som er
 
 ![image](https://github.com/user-attachments/assets/2294ef10-9b9b-410f-8a28-c817dd8e6ee8)
 ### Holdere
-Her vil du få en oversikt over alle som har reservert før. Du ser at det er et felt der: "Is In System". Hvis den er på, betyr det at personen ble lagt til selv, eller personen finnes i systemet. Hvis ikke, betyr det nok at Admin la denne til ved å skrive navn og telefon direkte inn.
+Her vil du få en oversikt over alle som har reservert før. Du ser at det er et felt der: "Is In System". Hvis den er på, betyr det at personen har laget en reservasjon selv, eller personen finnes i systemet. Hvis ikke, betyr det nok at Admin la denne til ved å skrive navn og telefon direkte inn.
 
 ![image](https://github.com/user-attachments/assets/06d8a579-7433-4376-a1b1-834f7add5ae0)
 ### Skjul
