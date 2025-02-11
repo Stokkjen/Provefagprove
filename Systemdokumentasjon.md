@@ -60,6 +60,7 @@ Triggere kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellen
   - Kunden kan kansellere en reservasjon om de vil.
 ### Backend (SQL)
 - Tabeller
+![image](https://github.com/user-attachments/assets/a3e721a0-ce3c-4853-b92f-a249fab69daf)
   - Reservations: Her ligger mesteparten av informasjonen til reservasjonene, inkludert gjester, reservasjons holder, tid og om den er kansellert.
   - ReservationsHolders: Dette inneholder basic informasjon om forskjellige folk som har reservert. Hvis Admin la til personen, er det bare Navn og Telefon. Men hvis det er en Customer som har gjort en reservasjon, så vil den referere til kunden sin bruker i systemet.
   - Tables: Her har vi informasjon om bord som de har, og hvor mange seter hvert bord har.
@@ -69,6 +70,7 @@ Triggere kjører sikkerhetssjekk omtrent likt som sikkerhets viewet til tabellen
   - AllReservations: Denne henter informasjon fra Reservations og ReservationsHolders tabellen for å få oversiktlig informasjon over alle reservasjoner. (Grunnet sikkerhets viewet i Reservations vil bare Customer se sine egne reservasjoner.)
   - ReservationsHolders: Grunnet valget i tabellen ReservationsHolders av enten direkte informasjon (navn og telefon) eller referanse til personen i systemet, tar dette viewet og kombinerer dem, slik at all informasjonen ligger på samme sted.
   - MyAccess: Dette viewet sjekker på Capabilities som du har, og returnerer IsAdmin og IsCustomer, som gjør ting mye lettere for sikkerheten i sikkerhets view til tabeller og triggere.
+  - Uptimes: Dette viewet bruker selve tabellen, men også et innebygd view som heter Weekdays. Da kombinerer den disse, for å få en simpel liste fra Mandag til Søndag med "Fra" tid og "Til" tid.
 - Prosedyrer
   - BookReservation: Dette er en relativt avansert prosedyre. Denne booker en reservasjon for kunden. Her må den gjøre en god del sjekker og kalkulasjoner for å få ønsket resultat, som hovedsaklig er sjekk om det er nok bord for reservasjonen, og så kalkulere hvilke bord reservasjonen skal bruke for optimale resultater.
 
@@ -79,3 +81,10 @@ Jeg holdt meg OK på planen, men selvfølgelig ble det avvik og hindringer her o
 - Lagt til tabell som ikke var med i planen: Uptimes. Denne var egentlig en veldig viktig del for restauranten, siden ellers hadde restauranten vært oppe hver dag og natt.
 - Fjernet view Reservations Today: Dette var fordi jeg hadde allerede et view (som var med i planen): All Reservations som egentlig var akkurat det samme, så da brukte jeg det viewet med et simpelt filter i frontenden.
 - En ting som tok meg litt for lang tid var kalkulasjonen av bord som en reservasjon skulle ta. Jeg fikk en endring, som var det at det måtte være spesifikke bord. For å ta høyde for dette måtte jeg kunne kalkulere bord som passet best antall gjester, og om det er for få plasser igjen. Dette virker fint nå, men var noe jeg brukte litt for lang tid på.
+
+## Planen videre
+- For admin, når de legger til en reservasjon, må de kunne ha en måte å velge folk som allerede har reservert før.
+- Ikke nødvendig, men noe Admin kunne få muligheten til er å legge til Reservations Holders uten å måtte lage en reservasjon for å få det til.
+- Jeg kom nærme, men grunnet begrenset tid fikk jeg det ikke til. Jeg syns at Admin bør kunne ha muligheten til å fjerne og legge til bord.
+- Nå blir det brukt veldig mye grids. De er da OK for å displaye informasjon, så kunne det vært mer brukervennlig, siden grids kan ta litt tid for å forstå.
+- Både Admin og Customer burde ha en mye lettere måte å se når restauranten er opptatt og når den ikke er. Nå er det, spesielt for Customer som ikke kan se andre reservasjoner, veldig vanskelig å vite når det er ledig. Nå må du bare håpe at restauranten har ledige bord på den tiden du bestiller.
