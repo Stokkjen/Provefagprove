@@ -11,4 +11,4 @@ Jeg fjernet et view som jeg skulle ha med, som var "ReservationsToday", fordi de
 ## Annerledes
 - I planen burde jeg ha brukt mer tid på å få på plass datamodellen og skissene med en gang, i stedenfor å bruke masse tid på å lage plan, lage datamodellen, så endre på planen for å tilpasse.
 - Jeg burde også ha tenkt på sikkerhet på forhånd, siden det kostet meg mye tid under den andre dagen, og litt den tredje.
-- 
+- Bruke mindre tid på det unødvendige. Jeg hadde en plan for å kunne skru av og på bord, og kunne legge til bord, men dette tok meg ganske lang tid fordi det er mye en må ha tanke på når en gjør det, og det var ikke del av oppgaven, så jeg stoppet med det, og fjernet det.
