@@ -8,6 +8,7 @@ Grunnet en relativt svak plan, er det ikke mange direkte avvik jeg hadde. Jeg la
 - Reservations Holders tab - Denne la jeg til fordi da er det en lett måte for admin å kunne se alle som har reservert, og også en lett måte for dem å anonymisere (som er en annen ting som ikke var i planen).
 - Uptimes - Denne burde ha vært inni planen, fordi dette er nødvendig funksjonalitet. Det holder informasjon om hvilke dager restauranten er oppe, og når.
 Jeg fjernet et view som jeg skulle ha med, som var "ReservationsToday", fordi der kunne jeg bare bruke "AllReservations" viewet og filtrere på hvor reservasjonen var i dag.
+I systemdokumentasjonen finnes det mer informasjon om dette.
 ## Annerledes
 - I planen burde jeg ha brukt mer tid på å få på plass datamodellen og skissene med en gang, i stedenfor å bruke masse tid på å lage plan, lage datamodellen, så endre på planen for å tilpasse.
 - Jeg burde også ha tenkt på sikkerhet på forhånd, siden det kostet meg mye tid under den andre dagen, og litt den tredje.
